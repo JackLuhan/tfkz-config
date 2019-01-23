@@ -21,16 +21,16 @@ sharding:
       type: com.zaxxer.hikari.HikariDataSource
       driver-class-name: com.mysql.jdbc.Driver
       username: root
-      password: lengleng
-      jdbc-url: jdbc:mysql://127.0.0.1:3306/pig?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowMultiQueries=true
+      password: root
+      jdbc-url: jdbc:mysql://47.104.134.122:3306/pig?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowMultiQueries=true
     datasource:
       names: ds
       ds:
         type: com.zaxxer.hikari.HikariDataSource
         driver-class-name: com.mysql.jdbc.Driver
         username: root
-        password: lengleng
-        jdbc-url: jdbc:mysql://127.0.0.1:3306/pig?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowMultiQueries=true
+        password: root
+        jdbc-url: jdbc:mysql://47.104.134.122:3306/pig?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowMultiQueries=true
     config:
       sharding:
         tables:
@@ -64,7 +64,7 @@ fdfs:
   file-host: http://127.0.0.1:22121/
   tracker-list:
     - 127.0.0.1:22122
-    
+
 # 七牛OSS 配置
 # qiniu:
 #  accessKey: hM2cBDEM0FTYzpXbigRW90kV12NhhzhFM3jCzurJ
