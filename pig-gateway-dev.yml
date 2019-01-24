@@ -13,18 +13,18 @@ zuul:
   ribbon:
     eager-load:
       enabled: true
-      clients: pig-auth,pig-upms-service,pig-demo-service
+      clients: tfkz-auth,tfkz-upms-service,tfkz-demo-service
   ignoredServices: '*'
   host:
     connect-timeout-millis: 10000
     socket-timeout-millis: 10000
   ratelimit:
-    key-prefix: pig-ratelimite
+    key-prefix: tfkz-ratelimite
     enabled: true
     repository: REDIS
     behind-proxy: true
     policies:
-      pig-upms-service:
+      tfkz-upms-service:
         limit: 100
         quota: 100
         refresh-interval: 3
@@ -38,8 +38,8 @@ security:
   sessions: stateless
   oauth2:
     client:
-      client-id: pig
-      client-secret: pig
+      client-id: tfkz
+      client-secret: tfkz
     resource:
       jwt:
          key-uri: ${security.auth.server}/oauth/token_key #解析jwt令牌所需要密钥的地址
